@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Interpolation</title>
+    <link rel="stylesheet" href="/static/nicepage.css" media="screen">
+<link rel="stylesheet" href="/static/Interpolation.css" media="screen">
+    <script class="u-script" type="text/javascript" src="/static/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="/static/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.5.3, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+     <style type=”text/css”>
+    .rotate {
+  display: inline-block;
+  filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.tblborder,
+.tblborder td,
+.tblborder th {
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+.tblborder td,
+.tblborder th {
+  padding: 20px 10px;
+}
+    </style>    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "/static/images/Screenshot2022-03-12105554.png",
+		"sameAs": []
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Interpolation">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode"><header class="u-clearfix u-header u-header" id="sec-26fa"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="442" data-image-height="326">
+          <img src="/static/images/Screenshot2022-03-12105554.png" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+              <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/call/" style="padding: 10px 20px;">Non Linear</a>
+              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/call/Linear/" style="padding: 10px 20px;">Linear</a>
+              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/call/Interpolation/" style="padding: 10px 20px;">Interpolation</a>
+              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/call/Integration/" style="padding: 10px 20px;">Integration</a>
+              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/call/Euler/" style="padding: 10px 20px;">Euler</a>
+              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/call/Picards/" style="padding: 10px 20px;">Picards</a>
+              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/call/runge/" style="padding: 10px 20px;">Runge Kutta</a>
+              </li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/call/" style="padding: 10px 20px;">Non Linear</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/call/Linear/" style="padding: 10px 20px;">Linear</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/call/Interpolation/" style="padding: 10px 20px;">Interpolation</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/call/Integration/" style="padding: 10px 20px;">Integration</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/call/Euler/" style="padding: 10px 20px;">Euler</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/call/Picards/" style="padding: 10px 20px;">Picards</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/call/runge/" style="padding: 10px 20px;">Runge Kutta</a>
+                </li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+    <section class="u-clearfix u-section-1" id="sec-5524">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <img class="u-expanded-width u-image u-image-default u-image-1" src="/static/images/f4541abf73d8c0686b4601cc00c56a12.jpg" alt="" data-image-width="800" data-image-height="483">
+        <div class="u-form u-form-1">
+          <form action="" method="post"  source="custom" name="form" style="padding: 10px;" >
+            {% csrf_token %}
+                  <div class="u-form-group u-form-select u-label-top u-form-group-1">
+              <label for="select-5b1e" class="u-label">Select Method</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-5b1e" name="select" onchange="myfunction2()" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-7 u-white" required="required">
+                  <option value="Newton Foraward">Newton Foraward</option>
+                  <option value="Newton Backward">Newton Backward</option>
+                  <option value="Stirling">Stirling</option>
+                  
+                  <option value="Bessel">Bessel</option>
+                  <option value="Gausss Forward">Gausss Forward</option>
+                  <option value="Lagrange">Lagrange Interpolation</option>
+                  <option value="newtondivided">Newton Divided Interpolation</option>
+                  <option value="newtonforwardderivative">Derivative Newton Forward Interpolation</option>
+                  <option value="newtonbackwardderivative">Derivative Newton Backward Interpolation</option>
+                  
+         
+ 
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-label-top u-form-group-2">
+              <label for="text-f372"   class="u-label">Number of  Values of X</label>
+              <input type="Number"  onchange="myFunction()" placeholder="First Intial" id="text-f372" name="text-1" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-7 u-white" required="required">
+            </div>
+            <div class="u-form-group u-label-top u-form-group-3">
+              <label for="text-3df1" id="one" class="u-label">X0</label>
+              <input type="text" placeholder="0.001" id="text-3df1" name="text-2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-7 u-white" >
+            </div>
+            <div class="u-form-group u-label-top u-form-group-4">
+              <label for="text-fefb" class="u-label">Xp</label>
+              <input type="text" placeholder="" id="text-fefb" name="text-6" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-7 u-white">
+            </div>
+            <div id="mynebla" style="display:none;">
+              <label for="text-fefb" class="u-label">Power of Delta/Nebla</label>
+              <input type="text" placeholder="" id="text-fefb" name="text-29" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-7 u-white">
+            </div>
+            <div class="u-form-group u-label-top u-form-group-5"> 
+              <label for="text-649f" id="two" class="u-label">Interval size h</label>
+              <input type="text" placeholder="" id="text-649f" name="text-7" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-7 u-white">
+            </div>
+            <div id="ourwork">
+           
+            </div>
+            <div id="ourwork2">
+           
+            </div>
+
+            
+            <div class="u-align-right u-form-group u-form-submit u-label-top">
+              <input type="submit" value="submit" class="u-form-control-hidden">
+              <a href="#" class="u-active-grey-40 u-border-none u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-1-base u-palette-1-light-1 u-radius-9 u-btn-1">Calculate<br>
+              </a>
+            </div>
+            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+            <input type="hidden" value="" name="recaptchaResponse">
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <script>
+      function myfunction2()
+      {
+        if( document.getElementById("select-5b1e").value=="Lagrange" || document.getElementById("select-5b1e").value=="newtondivided"
+        || document.getElementById("select-5b1e").value=="newtonforwardderivative"  || document.getElementById("select-5b1e").value=="newtonbackwardderivative"
+         
+        )
+            {
+                document.getElementById("ourwork2").style.display="block";
+                document.getElementById("text-3df1").style.display="none";  
+                document.getElementById("text-649f").style.display="none";
+                document.getElementById("one").style.display="none";
+                document.getElementById("two").style.display="none";
+
+            }
+            else{
+              document.getElementById("ourwork2").style.display="none";
+              document.getElementById("text-3df1").style.display="block";  
+                document.getElementById("text-649f").style.display="block";
+                document.getElementById("one").style.display="block";
+                document.getElementById("two").style.display="block";
+            }
+          if(document.getElementById("select-5b1e").value=="newtonforwardderivative"  || document.getElementById("select-5b1e").value=="newtonbackwardderivative")
+          {
+            document.getElementById("mynebla").style.display="block";
+          }  
+          else{
+            document.getElementById("mynebla").style.display="none";
+          }
+            
+      }
+      function myFunction() {
+        var val=document.getElementById("text-f372").value;
+        let text = "<table>";
+     
+       text+="<tr>"
+          for (let i = 0; i < val; i++) {
+             text += `
+             
+            <td>
+             <div class="u-form-group u-form-partition-factor-4 u-label-top u-form-group-4">
+              <label for="text-d0d1" class="u-label"  >y(${i})</label>
+              <input type="text" id="text-d0d1" name="text${i+100}" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-7 u-white">
+            </div>
+          </td>
+        
+             `;
+          }
+
+        
+        text+="</tr></table>"
+           document.getElementById("ourwork").innerHTML=text;
+
+            let text2 = "<table>";
+              if( document.getElementById("select-5b1e").value=="Lagrange" ||  document.getElementById("select-5b1e").value=="newtondivided" 
+              
+              || document.getElementById("select-5b1e").value=="newtonforwardderivative" ||  document.getElementById("select-5b1e").value=="newtonbackwardderivative" ){
+     text2+="<tr>"
+        for (let i = 0; i < val; i++) {
+           text2 += `
+           
+          <td>
+           <div class="u-form-group u-form-partition-factor-4 u-label-top u-form-group-4">
+            <label for="text-d0d1" class="u-label"  >x(${i})</label>
+            <input type="text" id="text-d0d1" name="text2${i+100}" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-7 u-white">
+          </div>
+        </td>
+      
+           `;
+        }
+
+
+      
+      text2+="</tr></table>"
+         document.getElementById("ourwork2").innerHTML=text2;
+        }
+        else{
+          document.getElementById("ourwork2").style.display="none";
+        }
+
+      }
+    </script>
+
+{% if resultofderivative %}
+<div style="white-space: pre-wrap;">
+  {{resultofderivative.string}}
+  {{resultofderivative.table}}
+
+  {{resultofderivative.pvalue}}
+  {{resultofderivative.fdash}}
+  {{resultofderivative.fddash}}
+  <br><br><br>
+</div>
+{% endif %}
+{% if resultofnewtondivide %}
+
+<div style="white-space: pre-wrap;">
+  {{resultofnewtondivide.table}}
+ 
+</div>
+<div>
+  {{resultofnewtondivide.result}}
+  <br><br><br>
+</div>
+<br><br><br>
+{% endif %}
+{% if resultoflagrange %}
+
+
+<div style="white-space: pre-wrap;">
+<h4>X value</h4>
+{{x}}
+<h4>Y value</h4>
+{{y}}
+
+  <h4>Terms</h4>
+    {% for it in resultoflagrange.terms %}
+      {{it}}
+{% endfor %}
+<h4>Result</h4>
+  {{resultoflagrange.result}}
+</div>
+<br><br><br>
+{% endif %}
+
+{% if result %}
+<h1 style="font-size:60px;">Difference Table</h1>
+<div style="white-space: pre-wrap;">
+  {% for it in result.table %}
+  {{it.val}}&nbsp;&nbsp;&nbsp;&nbsp;{{it.remain}}
+  {% endfor %}
+  
+  
+  
+</div>
+<br><br>
+<h1 style="font-size:60px;">Result</h1>
+<div>
+  {{result.result}}
+  
+</div>
+<br><br><br><br>
+{% endif %}
+{% if ourresult %}
+<h1 style="font-size:60px;">Difference Table</h1>
+<div style="white-space: pre-wrap;">
+  {% for it in ourresult.table %}
+  {{it.val}}&nbsp;&nbsp;&nbsp;&nbsp;{{it.remain}}
+  {% endfor %}
+</div>
+<br><br><br>
+<h1 style="font-size:60px;">Result</h1>
+<div>
+  {{values}}
+  
+</div>
+<br><br><br>
+{% endif %}
+<footer class="u-clearfix u-footer u-grey-80" id="sec-9e9a"><div class="u-clearfix u-sheet u-sheet-1">
+  <p class="u-text u-text-default u-text-1">
+    <span style="font-size: 3.75rem;">Habib ur Rehman</span>
+  </p>
+  <div class="u-align-left u-social-icons u-spacing-10 u-social-icons-1">
+    <a class="u-social-url" title="facebook" target="_blank" href="https://www.facebook.com/profile.php?id=100081034591197"><span class="u-icon u-social-facebook u-social-icon fa fa-yahoo u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-75cf"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-75cf"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
+      c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path></svg></span>
+      
+    </a>
+    
+    <a class="u-social-url" title="twitter" target="_blank" href="https://twitter.com/habibur57721331?t=ZuSaROJ-mupJ4cOX9KOJog&s=09"><span class="u-icon u-social-icon u-social-twitter u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-4ffb"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-4ffb"><circle fill="currentColor" class="st0" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M83.8,47.3c0,0.6,0,1.2,0,1.7c0,17.7-13.5,38.2-38.2,38.2C38,87.2,31,85,25,81.2c1,0.1,2.1,0.2,3.2,0.2
+      c6.3,0,12.1-2.1,16.7-5.7c-5.9-0.1-10.8-4-12.5-9.3c0.8,0.2,1.7,0.2,2.5,0.2c1.2,0,2.4-0.2,3.5-0.5c-6.1-1.2-10.8-6.7-10.8-13.1
+      c0-0.1,0-0.1,0-0.2c1.8,1,3.9,1.6,6.1,1.7c-3.6-2.4-6-6.5-6-11.2c0-2.5,0.7-4.8,1.8-6.7c6.6,8.1,16.5,13.5,27.6,14
+      c-0.2-1-0.3-2-0.3-3.1c0-7.4,6-13.4,13.4-13.4c3.9,0,7.3,1.6,9.8,4.2c3.1-0.6,5.9-1.7,8.5-3.3c-1,3.1-3.1,5.8-5.9,7.4
+      c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z"></path></svg></span>
+    </a>
+    <a class="u-social-url" title="instagram" target="_blank" href="https://instagram.com/habib_afzal_1030?igshid=YmMyMTA2M2Y="><span class="u-icon u-social-icon u-social-instagram u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-aae6"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-aae6"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
+      z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path><path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path><path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
+      C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
+      c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
+    </a>
+    <a class="u-social-url" title="linkedin" target="_blank" href="https://www.linkedin.com/in/habib-ur-rehman-582a1322a"><span class="u-icon u-social-icon u-social-linkedin u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-4eca"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-4eca"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M41.3,83.7H27.9V43.4h13.4V83.7z M34.6,37.9L34.6,37.9c-4.6,0-7.5-3.1-7.5-7c0-4,3-7,7.6-7s7.4,3,7.5,7
+      C42.2,34.8,39.2,37.9,34.6,37.9z M89.6,83.7H76.2V62.2c0-5.4-1.9-9.1-6.8-9.1c-3.7,0-5.9,2.5-6.9,4.9c-0.4,0.9-0.4,2.1-0.4,3.3v22.5
+      H48.7c0,0,0.2-36.5,0-40.3h13.4v5.7c1.8-2.7,5-6.7,12.1-6.7c8.8,0,15.4,5.8,15.4,18.1V83.7z"></path></svg></span>
+    </a>
+  </div>
+</div></footer>
+  </body>
+</html>

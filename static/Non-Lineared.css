@@ -1,0 +1,104 @@
+ 
+ .u-section-1 {
+  background-image: url("images/newton.jpg");
+}
+.u-section-1 .u-sheet-1 {
+  min-height: 456px;
+}
+
+@media (max-width: 1199px) {
+   .u-section-1 {
+    min-height: 296px;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 376px;
+  }
+}
+
+@media (max-width: 991px) {
+   .u-section-1 {
+    min-height: 208px;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 288px;
+  }
+}
+
+@media (max-width: 767px) {
+   .u-section-1 {
+    min-height: 136px;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 216px;
+  }
+}
+
+@media (max-width: 575px) {
+   .u-section-1 {
+    min-height: 56px;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 136px;
+  }
+}.u-section-2 .u-sheet-1 {
+  min-height: 1027px;
+}
+
+.u-section-2 .u-form-1 {
+  height: 328px;
+  margin: 75px 254px 0 201px;
+}
+
+.u-section-2 .u-form-group-1 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-form-group-2 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-form-group-3 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-form-group-4 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-btn-1 {
+  border-style: none;
+}
+
+.u-section-2 .u-table-1 {
+  margin-top: 174px;
+  margin-bottom: 60px;
+}
+
+.u-section-2 .u-table-header-1 {
+  font-weight: 700;
+  background-image: none;
+}
+
+@media (max-width: 1199px) {
+  .u-section-2 .u-form-1 {
+    margin-right: 154px;
+    margin-left: 101px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-2 .u-form-1 {
+    margin-right: 35px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-2 .u-form-1 {
+    margin-right: 0;
+  }
+}
